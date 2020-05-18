@@ -1,0 +1,32 @@
+/*This question asked by a king in the time of the
+3.There is 3 piller
+1.only one disk at a time
+2.not put big disk on the small disk
+2.You can only move the top most disk from any square.
+
+—Disks can be placed on an empty square on the board or on a larger disk
+,but disks cannot be placed next to each other on top of a larger disk.
+Wikipidia.
+https://en.wikipedia.org/wiki/Tower_of_Hanoi
+*/
+
+#include<iostream>
+#include<stdio.h>
+using namepace std;
+int main()
+{
+int n;
+cout<<"Enter the number\n";
+char A,B,C;
+void TOH(n,A,B,C)
+
+}
+void TOH(int n,char BEG,char AUX,char END)
+{
+if(n>=1)
+{
+    TOH(n-1,BEG,END,AUX);
+		printf("%c to %c\n",BEG,END);
+		TOH(n-1,AUX,BEG,END);
+}
+}
