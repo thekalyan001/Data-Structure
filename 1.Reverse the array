@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+void reverseARR(int end,int start,int a[])
+{
+    while(start<end)
+    {
+        int temp=a[start];
+        a[start]=a[end];
+        a[end]=temp;
+        start++;
+        end--;
+    }
+}
+void printARR(int n,int a[])
+{
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
+}
+int main()
+{
+int n;
+cin>>n;
+int arr[n];
+for(int i=0;i<n;i++)
+{
+    cin>>arr[i];
+}
+//if there is no size mentione then 
+//int p=sizeof(arr)/sizeof(arr[0]);
+reverseARR(n-1,0,arr);
+printARR(n,arr);
+return 0;
+}
