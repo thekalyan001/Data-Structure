@@ -1,0 +1,44 @@
+//time complaxity is O(n*d)//d is nuber of rotate
+#include<iostream>
+using namespace std;
+void rotatebyOne(int a[],int n)
+{
+    int temp=a[0],i;
+    for(i=0;i<n-1;i++)
+    {
+         a[i]=a[i+1];
+    }
+   a[i]=temp;4
+
+
+}
+void LeftRotate(int a[],int p,int n)
+{
+ for(int i=0;i<p;i++)
+ {
+     rotatebyOne(a,n);
+ }
+}
+void display(int a[],int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<< " ";
+    }
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+
+        cin>>a[i];
+    }
+    int p;
+    cin>>p;
+    LeftRotate(a,p,n);
+    display(a,n);
+    return 0;
+}
