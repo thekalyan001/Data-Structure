@@ -5,7 +5,7 @@ Sample Input
 
 5 4
 1 2 3 4 5
-Sample Output d=2(after two rotate)
+Sample Output (after four rotate)
 
 5 1 2 3 4
 
@@ -40,14 +40,14 @@ void print(int n,int arr[])
 int main()
 {
 int n,m;
-cin>>n;
+cin>>n>>m;
 int a[n];
 for(int i=0;i<n;i++)
 {
     cin>>a[i];
 }
-cout<<"Enter the number of rotation\n";
-cin>>m;
+//cout<<"Enter the number of rotation\n";
+//cin>>m;
 reverse(a,m,n);
 print(n,a);
 return 0;
