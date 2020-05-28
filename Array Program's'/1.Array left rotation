@@ -40,12 +40,14 @@ void print(int n,int arr[])
 int main()
 {
 int n,m;
-cin>>n>>m;
+cin>>n;
 int a[n];
 for(int i=0;i<n;i++)
 {
     cin>>a[i];
 }
+cout<<"Enter the number of rotation\n";
+cin>>m;
 reverse(a,m,n);
 print(n,a);
 return 0;
