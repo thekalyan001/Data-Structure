@@ -1,0 +1,17 @@
+#include<iostream>
+#include<string.h>
+#include<algorithm>
+using namespace std;
+int main()
+{
+//string k;
+char k[20];
+cin>>k;
+//int i=k.size(); for string
+int i=strlen(k);
+for(k[i]!='\0';i>=0;i--)
+{
+cout<<k[i]<<" ";
+}
+return 0;
+}
