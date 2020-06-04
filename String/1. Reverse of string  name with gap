@@ -6,7 +6,7 @@ int main()
 {
 //string k;
 char k[20];
-cin>>k;
+cin>>k;   //with space then gets(k);for both or for char[50] cin.getline(k,50);
 //int i=k.size(); for string
 int i=strlen(k);
 for(k[i]!='\0';i>=0;i--)
