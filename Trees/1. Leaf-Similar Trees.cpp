@@ -4,11 +4,22 @@
 
           3
         /    \
-      5       1       
+      5       1          
     /  \     / \ 
    6    2   9   8
        / \
       7   4
+      
+      
+          3
+        /    \
+      9       8       
+    /  \     / \ 
+   6    7   9   8
+       / \
+      7   4
+      
+      output-yes
       
   Definition for a binary tree node.
   struct TreeNode {
